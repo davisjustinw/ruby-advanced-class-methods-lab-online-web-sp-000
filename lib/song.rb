@@ -8,7 +8,12 @@ class Song
   end
   
   def initialize
+<<<<<<< HEAD
     self
+=======
+    binding.pry
+    @@all << self
+>>>>>>> daf94f4f77d25a7bed4c6e5e70b80dcbcf030573
   end
 
   def save
@@ -16,6 +21,7 @@ class Song
   end
 
   def self.create
+<<<<<<< HEAD
     song = self.new
     song.save
     song
@@ -60,4 +66,14 @@ class Song
   def self.destroy_all
     self.all.clear
   end
+=======
+    binding.pry
+    song = self.class.new
+    self.class.save
+    song
+  end
+>>>>>>> daf94f4f77d25a7bed4c6e5e70b80dcbcf030573
 end
+
+
+binding.pry
